@@ -28,7 +28,7 @@ if (isset($_FILES['curriculo']) && $_FILES['curriculo']['error'] === 0) {
  
     $extensao = strtolower(pathinfo($arquivo['name'], PATHINFO_EXTENSION));
    
-    // desafio
+    
     if ($extensao === 'pdf') {
         $pasta = "uploads/pdf/";
     } elseif ($extensao === 'doc' || $extensao === 'docx') {
